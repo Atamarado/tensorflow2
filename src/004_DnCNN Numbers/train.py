@@ -17,10 +17,12 @@ print(x_train.shape)
 
 # Model definition
 model = models.Sequential()
-model.add(layers.Conv2D(1, (3,3), activation='relu', input_shape=(IMG_SIZE, IMG_SIZE, 1)))
-model.add(layers.Conv2D(2, (3,3), activation='relu'))
-model.add(layers.Conv2DTranspose(2, (3,3), activation='relu'))
-model.add(layers.Conv2DTranspose(1, (3,3), activation='relu'))
+model.add(layers.Conv2D(1, (3,3), activation='relu', input_shape=(IMG_SIZE, IMG_SIZE, 1), padding='same'))
+# model.add(layers.MaxPooling2D((2,2), padding='same'))
+model.add(layers.Conv2D(2, (3,3), activation='relu', padding='same'))
+model.add(layers.Conv2DTranspose(2, (3,3), activation='relu', padding='same'))
+#model.add(layers.UpSampling2D((2,2)))
+model.add(layers.Conv2DTranspose(1, (3,3), activation='relu', padding='same'))
 
 #model.summary()
 
