@@ -12,6 +12,6 @@ Feel free to use the code if it's useful to you. I'll appreciate a little mentio
 code, and a star to this project.
 
 The project have 3 folders:
-    /src/:      Contains all the projects, enumerated from 000 to 999, ordered by creation.
+    /src/:      Contains all the projects, enumerated from 000 to 999, ordered by creation date.
     /.idea/:    Pycharm Project files.
     /venv/:     Virtual environment (necessary to compile the code)
