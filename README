@@ -1,1 +1,17 @@
-Here I will try to learn to program Tensorflow 2, because Tensorflow 1 was a bit worse. It is like Overwatch 2, a much better game than Overwatch 1.
+Project made by @Atamardo github.com/Atamarado
+
+This repository aims to contain and save all the code that I write to learn Machine Learning using package Tensorflow
+2.x, designed in Python. Because of that, note that in most cases, the code won't be as perfect as it could
+be, but that's part of the process of learning, I think.
+
+You can also note that most of the code also isn't properly documented. I'll do my best to give proper
+comments and documentation to projects when I understand new things. Some of the comments of the code
+would be in Spanish also :(.
+
+Feel free to use the code if it's useful to you. I'll appreciate a little mention to my github in the final
+code, and a star to this project.
+
+The project have 3 folders:
+    /src/:      Contains all the projects, enumerated from 000 to 999, ordered by creation.
+    /.idea/:    Pycharm Project files.
+    /venv/:     Virtual environment (necessary to compile the code)
