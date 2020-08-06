@@ -7,4 +7,4 @@ This project uses 3 .py files:
         examples.
 
 Here you can observe some results of the DnCNN:
-![alt text](https://github.com/Atamarado/tensotflow2/blob/src/004_DnCNN Numbers/results.png?raw=true)
+![](results.png)
