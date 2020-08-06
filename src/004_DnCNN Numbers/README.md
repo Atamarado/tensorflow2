@@ -7,4 +7,5 @@ This project uses 3 .py files:
         examples.
 
 Here you can observe some results of the DnCNN:
+
 ![](results.png)
