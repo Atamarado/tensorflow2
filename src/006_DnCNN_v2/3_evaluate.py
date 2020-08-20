@@ -7,18 +7,23 @@ from tensorflow.keras import models
 from PIL import Image
 import os
 
-# Try a simple batch for example
-x_test = np.load(os.path.join('data', 'x_test1.npy'))
-y_test = np.load(os.path.join('data', 'y_test1.npy'))
+IMG_SIZE = 50
+SAMPLE = 15
 
-print(np.shape(x_test))
-print(np.shape(y_test))
+# Try a simple batch for example
+x_test = np.load(os.path.join('data', 'x_test0.npy'))
+y_test = np.load(os.path.join('data', 'y_test0.npy'))
 
 model = models.load_model('model.h5')
 
 prediction = model.predict(x_test)
 
-print(np.shape(prediction))
+# # Denormalize
+# prediction = prediction*255
+# prediction = prediction.astype(int)
+# 
+# print(np.amax(prediction))
+# print(np.amin(prediction))
 
 #plt.imshow(prediction[7])
 #plt.show()
@@ -32,15 +37,17 @@ cols = 3
 
 fig = plt.figure()
 
+print(prediction[0])
+
 for i in range(cols):
     fig.add_subplot(rows, cols, i+1)
-    plt.imshow(x_test[i])
+    plt.imshow(x_test[i+SAMPLE])
     plt.axis('off')
     fig.add_subplot(rows, cols, cols+i+1)
-    plt.imshow(prediction[i])
+    plt.imshow(prediction[i+SAMPLE])
     plt.axis('off')
     fig.add_subplot(rows, cols, cols*2+i+1)
-    plt.imshow(y_test[i])
+    plt.imshow(y_test[i+SAMPLE])
     plt.axis('off')
 
 plt.suptitle("With noise vs. Denoised vs. Original", ha='center', fontsize=16)
@@ -52,14 +59,14 @@ plt.savefig('results.png')
 # Reading
 noiseimg = Image.open('example.jpg')
 # Resizing
-noiseimg = noiseimg.resize((200, 200))
+noiseimg = noiseimg.resize((IMG_SIZE, IMG_SIZE))
 # Convert to numpy array
 noisenp = np.array(noiseimg)
 # Normalizing
 noisenp = noisenp/256
 
 # Reshaping to 100*100*1
-noisenp = np.reshape(noisenp, (1, 200, 200, 3))
+noisenp = np.reshape(noisenp, (1, IMG_SIZE, IMG_SIZE, 3))
 
 denoised = model.predict(noisenp)
 

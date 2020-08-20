@@ -6,7 +6,7 @@ from pathlib import Path
 import os
 import random
 
-IMGSIZE = 200
+IMGSIZE = 50
 BATCH = 100
 
 def prepare_data(inputFile, outputFile_x, outputFile_y):
@@ -46,8 +46,9 @@ def prepare_data(inputFile, outputFile_x, outputFile_y):
 
             # Assign image to main array
             y_file[b] = npimg
-            # create and save noisy image
-            x_file[b] = npimg + (random.randint(0, 40) / 256 * np.random.normal(0, 1, size=npimg.shape))
+            # create and save noise in the image
+            noise = 40 / 256 * np.random.normal(0, 1, size=npimg.shape)
+            x_file[b] = npimg + noise
 
         x_filename = outputFile_x + str(a) + '.npy'
         y_filename = outputFile_y + str(a) + '.npy'

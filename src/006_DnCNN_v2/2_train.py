@@ -8,24 +8,39 @@ from tensorflow.keras import layers, models
 import os
 import matplotlib.pyplot as plt
 
-IMG_SIZE = 200
+IMG_SIZE = 50
 BATCH = 100
-TRAIN_FILES = 77
-EPOCHS = 5
+TRAIN_FILES = 131
+EPOCHS = 3
 
 # Model definition
 model = models.Sequential()
 model.add(layers.Conv2D(3, (3,3), activation='relu', input_shape=(IMG_SIZE, IMG_SIZE, 3), padding='same'))
+model.add(layers.BatchNormalization())
 #model.add(layers.MaxPooling2D((2,2), padding='same'))
-model.add(layers.Conv2D(6, (3,3), activation='relu', padding='same'))
-model.add(layers.Conv2D(6, (3,3), activation='relu', padding='same'))
+model.add(layers.Conv2D(8, (3,3), activation='relu', padding='same'))
+model.add(layers.BatchNormalization())
+model.add(layers.Conv2D(32, (3,3), activation='relu', padding='same'))
+# model.add(layers.BatchNormalization())
+# model.add(layers.Conv2D(128, (3,3), activation='relu', padding='same'))
+# model.add(layers.BatchNormalization())
+# model.add(layers.Conv2D(256, (3,3), activation='relu', padding='same'))
+# model.add(layers.BatchNormalization())
 
-model.add(layers.Conv2DTranspose(6, (3,3), activation='relu', padding='same'))
-model.add(layers.Conv2DTranspose(6, (3,3), activation='relu', padding='same'))
+# model.add(layers.Conv2DTranspose(256, (3,3), activation='relu', padding='same'))
+# model.add(layers.BatchNormalization())
+# model.add(layers.Conv2DTranspose(128, (3,3), activation='relu', padding='same'))
+# model.add(layers.BatchNormalization())
+model.add(layers.Conv2DTranspose(32, (3,3), activation='relu', padding='same'))
+model.add(layers.BatchNormalization())
+model.add(layers.Conv2DTranspose(8, (3,3), activation='relu', padding='same'))
+model.add(layers.BatchNormalization())
 #model.add(layers.UpSampling2D((2,2)))
-model.add(layers.Conv2DTranspose(3, (3,3), activation='relu', padding='same'))
+model.add(layers.Conv2DTranspose(3, (3,3), activation='sigmoid', padding='same'))
+#model.add(layers.BatchNormalization())
 
-#model.summary()
+
+model.summary()
 model.compile(optimizer=tf.keras.optimizers.Adagrad(learning_rate=0.1), loss=tf.keras.losses.MeanSquaredError())
 
 order = np.array([i for i in range(TRAIN_FILES)])
