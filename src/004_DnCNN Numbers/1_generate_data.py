@@ -25,6 +25,9 @@ y_test = y_test/256
 x_train = y_train + 20/256 * np.random.normal(0, 1, size=y_train.shape)
 x_test = y_test + 20/256 * np.random.normal(0, 1, size=y_test.shape)
 
+print(x_train.shape)
+print(x_test.shape)
+
 # plt.imshow(x_test[6])
 # plt.show()
 # plt.imshow(y_test[6])

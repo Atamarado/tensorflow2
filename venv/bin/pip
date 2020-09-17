@@ -1,4 +1,4 @@
-#!/media/gines/GCPiles/Archivos/venv/bin/python
+#!/media/gines/GCPiles/Archivos/tf/venv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys

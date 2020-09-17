@@ -25,7 +25,7 @@ model.add(layers.Conv2DTranspose(2, (3,3), activation='relu', padding='same'))
 #model.add(layers.UpSampling2D((2,2)))
 model.add(layers.Conv2DTranspose(1, (3,3), activation='relu', padding='same'))
 
-#model.summary()
+model.summary()
 
 model.compile(optimizer=tf.keras.optimizers.Adagrad(learning_rate=0.1), loss=tf.keras.losses.MeanSquaredError())
 
