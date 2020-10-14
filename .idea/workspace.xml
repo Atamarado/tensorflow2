@@ -20,50 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fdb74485-fb9e-450a-acbb-eaa79824b704" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/007_DnCNN_pepper/1_generate_data.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/007_DnCNN_pepper/2_train.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/007_DnCNN_pepper/3_evaluate.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/007_DnCNN_pepper/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/007_DnCNN_pepper/example.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/007_DnCNN_pepper/external_results.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/007_DnCNN_pepper/model.h5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/007_DnCNN_pepper/results.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/007_DnCNN_pepper/train.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/007_DnCNN_pepper/val.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/004_DnCNN Numbers/1_generate_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/004_DnCNN Numbers/1_generate_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/004_DnCNN Numbers/2_train.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/004_DnCNN Numbers/2_train.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/004_DnCNN Numbers/example.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/004_DnCNN Numbers/example.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/004_DnCNN Numbers/external_results.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/004_DnCNN Numbers/external_results.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/004_DnCNN Numbers/model.h5" beforeDir="false" afterPath="$PROJECT_DIR$/src/004_DnCNN Numbers/model.h5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/004_DnCNN Numbers/results.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/004_DnCNN Numbers/results.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/bin/pip" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/pip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/bin/pip3" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/pip3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/bin/pip3.8" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/pip3.8" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/pip-20.2.dist-info/INSTALLER" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/pip-20.2.dist-info/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/pip-20.2.dist-info/METADATA" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/pip-20.2.dist-info/RECORD" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/pip-20.2.dist-info/WHEEL" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/pip-20.2.dist-info/entry_points.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/pip-20.2.dist-info/top_level.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/pip/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/pip/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/pip/_internal/cli/base_command.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/pip/_internal/cli/base_command.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/pip/_internal/commands/install.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/pip/_internal/commands/install.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/pip/_internal/commands/list.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/pip/_internal/commands/list.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/pip/_internal/commands/search.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/pip/_internal/commands/search.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/pip/_internal/network/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/pip/_internal/network/auth.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/pip/_internal/network/lazy_wheel.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/pip/_internal/network/lazy_wheel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/pip/_internal/operations/install/wheel.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/pip/_internal/operations/install/wheel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/pip/_internal/req/req_install.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/pip/_internal/req/req_install.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/pip/_internal/resolution/resolvelib/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/pip/_internal/resolution/resolvelib/base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/pip/_internal/resolution/resolvelib/candidates.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/pip/_internal/resolution/resolvelib/candidates.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/pip/_internal/resolution/resolvelib/factory.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/pip/_internal/resolution/resolvelib/factory.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/pip/_internal/resolution/resolvelib/provider.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/pip/_internal/resolution/resolvelib/provider.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/pip/_internal/resolution/resolvelib/resolver.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/pip/_internal/resolution/resolvelib/resolver.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/pip/_internal/utils/misc.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/pip/_internal/utils/misc.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/pip/_internal/utils/virtualenv.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/pip/_internal/utils/virtualenv.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/pip/_internal/vcs/subversion.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/pip/_internal/vcs/subversion.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/008_DnCNN_v3/2_train.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/008_DnCNN_v3/2_train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/008_DnCNN_v3/3_evaluate.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/008_DnCNN_v3/3_evaluate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/008_DnCNN_v3/external_results.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/008_DnCNN_v3/external_results.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/008_DnCNN_v3/model.h5" beforeDir="false" afterPath="$PROJECT_DIR$/src/008_DnCNN_v3/model.h5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/008_DnCNN_v3/results.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/008_DnCNN_v3/results.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +55,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -109,8 +71,8 @@
       <recent name="$PROJECT_DIR$/src/005_Gender_Recognition" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.3_evaluate (1)">
-    <configuration name="1_generate_data (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.3_evaluate">
+    <configuration name="1_generate_data" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="tf" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -118,12 +80,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/006_DnCNN_v2" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/008_DnCNN_v3" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/006_DnCNN_v2/1_generate_data.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/008_DnCNN_v3/1_generate_data.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -132,7 +94,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="2_train (2)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="2_train (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="tf" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -140,12 +102,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/007_DnCNN_pepper" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/008_DnCNN_v3" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/007_DnCNN_pepper/2_train.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/008_DnCNN_v3/2_train.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -206,12 +168,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/007_DnCNN_pepper" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/008_DnCNN_v3" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/007_DnCNN_pepper/3_evaluate.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/008_DnCNN_v3/3_evaluate.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -222,11 +184,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.3_evaluate" />
+        <item itemvalue="Python.2_train (1)" />
+        <item itemvalue="Python.1_generate_data" />
         <item itemvalue="Python.3_evaluate (1)" />
         <item itemvalue="Python.2_train" />
-        <item itemvalue="Python.1_generate_data (1)" />
-        <item itemvalue="Python.3_evaluate" />
-        <item itemvalue="Python.2_train (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -262,6 +224,17 @@
       <workItem from="1599903248431" duration="4342000" />
       <workItem from="1600339612107" duration="734000" />
       <workItem from="1600349634305" duration="618000" />
+      <workItem from="1601026483322" duration="1810000" />
+      <workItem from="1601112386431" duration="3324000" />
+      <workItem from="1601564305675" duration="3802000" />
+      <workItem from="1601631906910" duration="3421000" />
+      <workItem from="1601900961465" duration="470000" />
+      <workItem from="1601901338613" duration="493000" />
+      <workItem from="1601973569714" duration="5380000" />
+      <workItem from="1602060967734" duration="3459000" />
+      <workItem from="1602509555500" duration="805000" />
+      <workItem from="1602589111829" duration="1023000" />
+      <workItem from="1602622688264" duration="700000" />
     </task>
     <servers />
   </component>
@@ -289,26 +262,26 @@
       <screen x="72" y="27" width="1294" height="741" />
     </state>
     <state x="279" y="148" width="424" height="491" key="FileChooserDialogImpl/72.27.1294.741@72.27.1294.741" timestamp="1596706882024" />
-    <state width="1248" height="303" key="GridCell.Tab.0.bottom" timestamp="1599909033710">
+    <state width="1248" height="254" key="GridCell.Tab.0.bottom" timestamp="1602650316342">
       <screen x="72" y="29" width="1294" height="739" />
     </state>
     <state width="1248" height="226" key="GridCell.Tab.0.bottom/72.27.1294.741@72.27.1294.741" timestamp="1598451598855" />
-    <state width="1248" height="303" key="GridCell.Tab.0.bottom/72.29.1294.739@72.29.1294.739" timestamp="1599909033710" />
-    <state width="1248" height="303" key="GridCell.Tab.0.center" timestamp="1599909033709">
+    <state width="1248" height="254" key="GridCell.Tab.0.bottom/72.29.1294.739@72.29.1294.739" timestamp="1602650316342" />
+    <state width="1248" height="254" key="GridCell.Tab.0.center" timestamp="1602650316342">
       <screen x="72" y="29" width="1294" height="739" />
     </state>
     <state width="1248" height="226" key="GridCell.Tab.0.center/72.27.1294.741@72.27.1294.741" timestamp="1598451598854" />
-    <state width="1248" height="303" key="GridCell.Tab.0.center/72.29.1294.739@72.29.1294.739" timestamp="1599909033709" />
-    <state width="1248" height="303" key="GridCell.Tab.0.left" timestamp="1599909033709">
+    <state width="1248" height="254" key="GridCell.Tab.0.center/72.29.1294.739@72.29.1294.739" timestamp="1602650316342" />
+    <state width="1248" height="254" key="GridCell.Tab.0.left" timestamp="1602650316342">
       <screen x="72" y="29" width="1294" height="739" />
     </state>
     <state width="1248" height="226" key="GridCell.Tab.0.left/72.27.1294.741@72.27.1294.741" timestamp="1598451598854" />
-    <state width="1248" height="303" key="GridCell.Tab.0.left/72.29.1294.739@72.29.1294.739" timestamp="1599909033709" />
-    <state width="1248" height="303" key="GridCell.Tab.0.right" timestamp="1599909033709">
+    <state width="1248" height="254" key="GridCell.Tab.0.left/72.29.1294.739@72.29.1294.739" timestamp="1602650316342" />
+    <state width="1248" height="254" key="GridCell.Tab.0.right" timestamp="1602650316342">
       <screen x="72" y="29" width="1294" height="739" />
     </state>
     <state width="1248" height="226" key="GridCell.Tab.0.right/72.27.1294.741@72.27.1294.741" timestamp="1598451598855" />
-    <state width="1248" height="303" key="GridCell.Tab.0.right/72.29.1294.739@72.29.1294.739" timestamp="1599909033709" />
+    <state width="1248" height="254" key="GridCell.Tab.0.right/72.29.1294.739@72.29.1294.739" timestamp="1602650316342" />
     <state width="1248" height="215" key="GridCell.Tab.1.bottom" timestamp="1596726426283">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
@@ -342,11 +315,11 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/tf$1_generate_data__1_.coverage" NAME="1_generate_data (1) Coverage Results" MODIFIED="1599906276738" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/006_DnCNN_v2" />
     <SUITE FILE_PATH="coverage/tf$DnCNN.coverage" NAME="DnCNN Coverage Results" MODIFIED="1596468481530" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/001_Fashion Dataset" />
-    <SUITE FILE_PATH="coverage/tf$3_evaluate.coverage" NAME="3_evaluate Coverage Results" MODIFIED="1599904842743" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/007_DnCNN_pepper" />
+    <SUITE FILE_PATH="coverage/tf$3_evaluate.coverage" NAME="3_evaluate Coverage Results" MODIFIED="1602650290440" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/008_DnCNN_v3" />
     <SUITE FILE_PATH="coverage/tf$neural_networks.coverage" NAME="neural_networks Coverage Results" MODIFIED="1596463990540" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/003_Pruebario" />
     <SUITE FILE_PATH="coverage/tf$train__1_.coverage" NAME="train (1) Coverage Results" MODIFIED="1597055739295" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/005_Gender_Recognition" />
-    <SUITE FILE_PATH="coverage/tf$2_train__1_.coverage" NAME="2_train (1) Coverage Results" MODIFIED="1599558478163" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/004_DnCNN Numbers" />
-    <SUITE FILE_PATH="coverage/tf$1_generate_data.coverage" NAME="1_generate_data Coverage Results" MODIFIED="1599557407816" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/004_DnCNN Numbers" />
+    <SUITE FILE_PATH="coverage/tf$2_train__1_.coverage" NAME="2_train (1) Coverage Results" MODIFIED="1602622715188" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/008_DnCNN_v3" />
+    <SUITE FILE_PATH="coverage/tf$1_generate_data.coverage" NAME="1_generate_data Coverage Results" MODIFIED="1601973917053" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/008_DnCNN_v3" />
     <SUITE FILE_PATH="coverage/tf$titanic.coverage" NAME="titanic Coverage Results" MODIFIED="1596291665770" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/003_Pruebario" />
     <SUITE FILE_PATH="coverage/tf$evaluate.coverage" NAME="evaluate Coverage Results" MODIFIED="1596545356435" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/004_DnCNN Numbers" />
     <SUITE FILE_PATH="coverage/tf$generate_data.coverage" NAME="generate_data Coverage Results" MODIFIED="1596542950975" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/004_DnCNN Numbers" />

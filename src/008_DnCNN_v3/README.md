@@ -1,4 +1,4 @@
-Alternative version of project 006. The results are a bit worse, in enchange of a boost of performance. The dataset used is faces, located in the folder /src/datasets. You'll find all relevant info there.
+Improved version of project 004. Now, it denoises RGB images and the output images have 200 x 200 resolution. The dataset used is faces, located in the folder /src/datasets. You'll find all relevant info there.
 
 This project is based in 3 .py files:
     1_generate_data.py: Data is read from mnist number dataset and adapted to the problem. Generates files x_test, x_train, y_test, y_train.

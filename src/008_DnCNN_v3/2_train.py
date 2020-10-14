@@ -9,10 +9,12 @@ import os
 import time
 import matplotlib.pyplot as plt
 
-IMG_SIZE = 200
-BATCH = 200
-TRAIN_FILES = 65
-EPOCHS = 3
+IMG_SIZE = 150
+BATCH = 100
+TRAIN_FILES = 241
+EPOCHS = 10
+
+N_TIME_VALUES = 10
 
 # Model definition
 model = models.Sequential()
@@ -25,55 +27,66 @@ model.add(layers.Conv2D(3, (3,3), activation='relu', padding='same'))
 model.add(layers.BatchNormalization())
 model.add(layers.Conv2D(3, (3,3), activation='relu', padding='same'))
 model.add(layers.BatchNormalization())
-
-# model.add(layers.Conv2DTranspose(3, (3,3), activation='relu', padding='same'))
-# model.add(layers.BatchNormalization())
-# model.add(layers.Conv2DTranspose(3, (3,3), activation='relu', padding='same'))
-# model.add(layers.BatchNormalization())
-# model.add(layers.Conv2DTranspose(3, (3,3), activation='relu', padding='same'))
-# model.add(layers.BatchNormalization())
-# #model.add(layers.UpSampling2D((2,2)))
-# model.add(layers.Conv2DTranspose(3, (3,3), activation='sigmoid', padding='same'))
-# #model.add(layers.BatchNormalization())
+model.add(layers.Conv2D(3, (3,3), activation='relu', padding='same'))
+model.add(layers.BatchNormalization())
+model.add(layers.Conv2D(3, (3,3), activation='relu', padding='same'))
+model.add(layers.BatchNormalization())
+model.add(layers.Conv2D(3, (3,3), activation='relu', padding='same'))
+model.add(layers.BatchNormalization())
+model.add(layers.Conv2D(3, (3,3), activation='relu', padding='same'))
+model.add(layers.BatchNormalization())
 
 
 model.summary()
 model.compile(optimizer=tf.keras.optimizers.Adagrad(learning_rate=0.1), loss=tf.keras.losses.MeanSquaredError())
 
-order = np.array([i for i in range(TRAIN_FILES)])
+order = np.arange(TRAIN_FILES)
 
 # We'll fit in our DnCNN every image from every train file epoch times
 # For every epoch
 
+TOTAL_FITS = EPOCHS*TRAIN_FILES
+fitsDone = 0
 
-# Randomize order to improve accuracy
-np.random.shuffle(order)
-tiempo = time.time()
-for b in range(TRAIN_FILES):
-    tiempo = tiempo*(int(TRAIN_FILES-b))
+# Execution time
+startTime = time.time()
 
-    print("Progress: " + str(b/TRAIN_FILES))
-    print("Time remaining: " + str(tiempo/60) + " min.")
-    #print("Time remaining: " + str(time.hour) + "h, " + str(time.minute) + "m.")
+for a in range(EPOCHS):
+    np.random.shuffle(order)
+    for b in range(TRAIN_FILES):
 
-    start = time.time()
-    # read_files
-    y_images = np.load(os.path.join('data', 'y_train'+str(order[b])+'.npy'))
+        # read_files
+        fileName = 'y_train'+str(order[b])+'.npy'
+        print("Opening " + fileName)
+        y_images = np.load(os.path.join('data', fileName))
 
-    # Randomize every batch
-    random = np.arange(BATCH)
-    np.random.shuffle(random)
-    y_images = y_images[random]
+        # Randomize every batch
+        #-------------------------------------------------------------------------------
+        np.random.shuffle(y_images)
 
-    # Generate noisy images
-    x_images = y_images + 40 / 256 * np.random.normal(0, 1, size=y_images.shape)
+        # Generate noisy images
+        noise = 20 / 256 * np.random.normal(0, 1, size=y_images.shape)
+        x_images = y_images + noise
 
-    # Train batch
-    model.fit(x=x_images, y=y_images, epochs=EPOCHS, verbose=2)
+        # Train batch
+        model.fit(x=x_images, y=y_images, epochs=1, verbose=1)
+        fitsDone = fitsDone + 1
 
-    tiempo = time.time() - start
+        progress = fitsDone / TOTAL_FITS
+        tiempo = time.time()
+        timeRemaining = (tiempo-startTime)*(TOTAL_FITS-fitsDone)/fitsDone
+
+        print("Progress: " + str(progress))
+        print("Time remaining: " + str(timeRemaining/60) + " min.")
+        #print("Time remaining: " + str(time.hour) + "h, " + str(time.minute) + "m.")
+        print("")
 
 # Save model
 model.save('model.h5')
+
+# Execution time
+endTime = time.time()
+
+print("Total time: " + str(endTime-startTime))
 
 

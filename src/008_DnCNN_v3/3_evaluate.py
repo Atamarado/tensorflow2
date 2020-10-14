@@ -7,14 +7,15 @@ from tensorflow.keras import models
 from PIL import Image
 import os
 
-IMG_SIZE = 200
-SAMPLE = 15
+IMG_SIZE = 150
+SAMPLE = 1
 
 # Try a simple batch for example
 y_test = np.load(os.path.join('data', 'y_test0.npy'))
 
 # Generate noisy images
-x_test = y_test + 40 / 256 * np.random.normal(0, 1, size=y_test.shape)
+noise = 20 / 256 * np.random.normal(0, 1, size=y_test.shape)
+x_test = y_test + noise
 
 model = models.load_model('model.h5')
 
